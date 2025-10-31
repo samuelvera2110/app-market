@@ -27,8 +27,8 @@ dependencies {
 
 	runtimeOnly 'org.postgresql:postgresql'
 
-	implementation 'org.mapstruct:mapstruct'
-	annotationProcessor 'org.mapstruct:mapstruct-processor'
+	implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
 
 }
 
