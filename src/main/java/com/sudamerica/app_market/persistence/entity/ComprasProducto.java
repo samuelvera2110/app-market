@@ -1,9 +1,11 @@
 package com.sudamerica.app_market.persistence.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "compras_productos")
+@Data
 public class ComprasProducto {
 
     @EmbeddedId
@@ -16,42 +18,10 @@ public class ComprasProducto {
     private Boolean estado;
 
     @ManyToOne
-    @JoinColumn(name = "id_compra",insertable = false,updatable = false)
+    @JoinColumn(name = "id_compra", insertable = false, updatable = false)
     private Compra compra;
 
     @ManyToOne
-    @JoinColumn(name = "id_producto",insertable = false,updatable = false)
+    @JoinColumn(name = "id_producto", insertable = false, updatable = false)
     private Producto producto;
-
-    public ComprasProductoPK getId() {
-        return id;
-    }
-
-    public void setId(ComprasProductoPK id) {
-        this.id = id;
-    }
-
-    public Integer getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(Integer cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public Double getTotal() {
-        return total;
-    }
-
-    public void setTotal(Double total) {
-        this.total = total;
-    }
-
-    public Boolean getEstado() {
-        return estado;
-    }
-
-    public void setEstado(Boolean estado) {
-        this.estado = estado;
-    }
 }

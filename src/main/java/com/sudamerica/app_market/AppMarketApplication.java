@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AppMarketApplication {
 
 	/* Comentario agregado*/
-
 	public static void main(String[] args) {
 		SpringApplication.run(AppMarketApplication.class, args);
 	}
