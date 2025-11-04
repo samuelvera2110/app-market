@@ -7,8 +7,8 @@ import lombok.Setter;
 @Data
 public class Category {
 
-    private int categoryId;
+    private Integer categoryId;
     private String category;
-    private boolean active;
+    private Boolean active;
 
 }

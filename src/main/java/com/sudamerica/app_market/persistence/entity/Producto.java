@@ -1,10 +1,7 @@
 package com.sudamerica.app_market.persistence.entity;
 
 import jakarta.persistence.*;
-import jdk.jfr.Category;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Entity
 @Table(name = "productos")
